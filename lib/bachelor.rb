@@ -43,6 +43,7 @@ def get_occupation(data, hometown)
     contestants.each {|contestant|
       if (contestant["hometown"] == hometown) && (found = false)
         occupation = contestant["occupation"]
+        found = true
       end
     }
   }
