@@ -41,7 +41,7 @@ def get_occupation(data, hometown)
   found = false
   data.each {|season, contestants|
     contestants.each {|contestant|
-      if (contestant["hometown"] == hometown) && (found = false)
+      if (contestant["hometown"] == hometown) && (found == false)
         occupation = contestant["occupation"]
         found = true
       end
