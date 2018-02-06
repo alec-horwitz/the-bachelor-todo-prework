@@ -1,4 +1,3 @@
-require "pry"
 def get_first_name_of_season_winner(data, season)
   # code here
   name = ""
@@ -55,11 +54,9 @@ def get_average_age_for_season(data, season)
   # code here
   n = 0
   d = 0
-  # binding.pry
   data[season].each {|contestant|
     n += contestant["age"].to_i
     d += 1
-    # binding.pry
   }
   binding.pry
   (n/d.to_f).round(0)
