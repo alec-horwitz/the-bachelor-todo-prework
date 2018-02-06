@@ -52,4 +52,13 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  n = 0
+  d = 0
+  data.each {|season, contestants|
+    contestants.each {|contestant|
+      n += contestant["age"]
+      d += 1
+    }
+  }
+  name
 end
